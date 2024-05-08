@@ -8,6 +8,7 @@ import { MdOutlineFileDownload } from "react-icons/md";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Navbar from "./Navbar";
 
 const Homepage = () => {
   const [typeEffect] = useTypewriter({
@@ -25,7 +26,9 @@ const Homepage = () => {
     });
   }, []);
   return (
-    <div className="w-full h-screen text-center bg-blue-950">
+    <>
+    <Navbar/>
+    <div className="w-full h-screen text-center bg-blue-950 pt-24">
       <div className="flex justify-center items-center w-full h-full mx-auto p-2 max-w-[1240px]">
         <div
           data-aos="fade-up"
@@ -68,6 +71,7 @@ const Homepage = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

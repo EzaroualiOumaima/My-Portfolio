@@ -5,6 +5,7 @@ import { projectsData } from "../libs/data";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Navbar from "../_components/Navbar";
 
 const Proj = () => {
   useEffect(() => {
@@ -17,6 +18,8 @@ const Proj = () => {
   }, []);
 
   return (
+    <>
+    <Navbar/>
     <div className="bg-blue-950 flex flex-col items-center justify-center h-full w-full py-44">
       <h2
         data-aos="fade-up"
@@ -43,6 +46,7 @@ const Proj = () => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 export default Proj;
