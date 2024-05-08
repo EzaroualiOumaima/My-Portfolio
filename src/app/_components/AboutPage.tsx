@@ -28,7 +28,7 @@ const AboutPage = () => {
         </div>
         <div
           data-aos="fade-left"
-          className=" flex flex-col gap-3 w-11/12 md:w-6/12 "
+          className=" flex flex-col gap-3 w-10/12 md:w-6/12 "
         >
           <p className="font-bold text-5xl text-white tracking-wide text-center md:text-start">
             About <span className="text-blue-500">Me</span>{" "}
