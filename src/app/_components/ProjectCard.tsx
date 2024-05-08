@@ -1,12 +1,19 @@
 "use client";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React, { useRef } from "react";
 import { projectsData } from "../libs/data";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Link from "next/link";
 
-type ProjectProps = (typeof projectsData)[number];
+// type ProjectProps = (typeof projectsData)[number];
+type ProjectProps = {
+  imageUrl: StaticImageData;
+  title: string; // Change this to accept a wider range of titles
+  description: string;
+  tags: string[];
+  href: string;
+};
 const ProjectCard = ({
   imageUrl,
   title,

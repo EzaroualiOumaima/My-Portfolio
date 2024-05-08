@@ -106,4 +106,4 @@ export const projectsData = [
       href:"https://github.com/EzaroualiOumaima/ToDoList-MERN.git"
     },
    
-] as const 
+] 
