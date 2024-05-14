@@ -18,7 +18,7 @@ const AboutPage = () => {
 
   return (
     <>
-      <div className="flex flex-col md:flex-row justify-start  md:justify-center items-center  gap-24 font-[Poppins] pt-28 bg-blue-950">
+      <div className="flex flex-col md:flex-row justify-start md:justify-center items-center  gap-24 font-[Poppins] pt-28 bg-blue-950">
         <div data-aos="fade-right" className=" w-[85%] md:w-3/12  md:h-auto   ">
           <Image
             src={image}

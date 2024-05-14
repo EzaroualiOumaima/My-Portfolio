@@ -14,12 +14,12 @@ import Entrance from "../../src/LottieAnimation/Animation.json";
 const Page = () => {
   const [entrance, setEntrance] = useState(true);
   const [heroSection, setHeroSection] = useState(false);
-  useEffect(()=> {
+  useEffect(() => {
     setTimeout(() => {
-      setEntrance(false)
-      setHeroSection(true)
+      setEntrance(false);
+      setHeroSection(true);
     }, 3000);
-  })
+  });
   return (
     <>
       {entrance && (
@@ -38,14 +38,14 @@ const Page = () => {
       )}
       <main>
         {heroSection && (
-          <>
+          <div className="w-full overflow-hidden">
             <Homepage />
             <AboutPage />
             <SkillsPage />
             <Proj />
             <ContactPage />
             <Footer />
-          </>
+          </div>
         )}
       </main>
     </>
