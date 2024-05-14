@@ -17,7 +17,7 @@ const AboutPage = () => {
   }, []);
 
   return (
-    <>
+    <div className="w-full overflow-hidden">
       <Navbar />
       <div className="flex flex-col md:flex-row pt-28 md:pt-0 min-h-screen justify-start  md:justify-center items-center  gap-24 font-[Poppins]  bg-blue-950">
         <div data-aos="fade-right" className=" w-[85%] md:w-3/12  md:h-auto   ">
@@ -49,7 +49,7 @@ const AboutPage = () => {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
