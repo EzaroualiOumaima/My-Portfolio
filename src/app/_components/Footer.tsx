@@ -48,7 +48,7 @@ export default function Footer() {
             href="https://www.linkedin.com/in/oumaima-ezarouali-382143232/"
             className="hover:underline"
           >
-            Ezarouali Oumaima™
+            Oumaima EZAROUALI™
           </Link>
           . All Rights Reserved.
         </span>

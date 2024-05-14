@@ -5,6 +5,7 @@ import image from "../../../public/assests/new picture.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Navbar from "../_components/Navbar";
+import Footer from "../_components/Footer";
 
 const AboutPage = () => {
   useEffect(() => {
@@ -37,7 +38,7 @@ const AboutPage = () => {
           <h1 className="font-semibold italic text-2xl md:text-xl leading-10 text-blue-500 text-center md:text-start">
             Full Stack Developer
           </h1>
-          <p className=" text-lg text-white leading-normal ">
+          <p className=" text-lg text-white leading-normal mb-20">
             I&apos;m a full stack web developer specialized in the MERN stack,
             I&apos;m proficient in building end-to-end web applications, from
             the database to the frontend. My expertise spans MongoDB for data
@@ -49,6 +50,7 @@ const AboutPage = () => {
           </p>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

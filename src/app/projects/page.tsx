@@ -6,6 +6,7 @@ import { projectsData } from "../libs/data";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Navbar from "../_components/Navbar";
+import Footer from "../_components/Footer";
 
 const Proj = () => {
   useEffect(() => {
@@ -20,7 +21,7 @@ const Proj = () => {
   return (
     <>
     <Navbar/>
-    <div className="bg-blue-950 flex flex-col items-center justify-center h-full w-full py-44">
+    <div className="bg-blue-950 flex flex-col items-center justify-center h-full w-full py-20">
       <h2
         data-aos="fade-up"
         className="py-4 tracking-widest text-gray-300 uppercase"
@@ -46,6 +47,7 @@ const Proj = () => {
         ))}
       </div>
     </div>
+    <Footer/>
     </>
   );
 };

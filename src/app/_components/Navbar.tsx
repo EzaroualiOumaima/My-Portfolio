@@ -62,8 +62,9 @@ const Navbar = () => {
             transition={{
               duration: "0.4",
             }}
-            className="bg-blue-950 gap-6  text-white font-semibold text-2xl  w-full h-screen flex flex-col items-center justify-center fixed top-0 right-0 left-0 bottom-0 z-50"
+            className="bg-blue-950 text-white font-semibold text-2xl w-full h-screen flex flex-col items-center justify-between fixed top-0 right-0 left-0 bottom-0 z-50"
           >
+            <div className="flex flex-col items-center justify-center gap-7 text-2xl pt-36">
             <Link href="/" className="hover:text-blue-800">
               Home
             </Link>
@@ -79,11 +80,17 @@ const Navbar = () => {
             <Link href="/contact" className="hover:text-blue-800">
               Contact Me
             </Link>
-
+            </div>
+            
             <IoIosCloseCircleOutline
               className="w-10 h-10  absolute cursor-pointer top-5 right-4 text-white"
               onClick={() => setOpenMenu(false)}
             />
+            <div className="flex justify-center items-center gap-5 pb-5">
+              <Image src={logo} alt="logo" className="w-14 h-14"/>
+              <p className="text-white text-lg">O.EZAROUALI</p>
+
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

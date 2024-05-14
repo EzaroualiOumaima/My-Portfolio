@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Footer from "../_components/Footer";
 import Navbar from "../_components/Navbar";
 
 const SkillsPage = () => {
@@ -18,9 +19,9 @@ const SkillsPage = () => {
   }, []);
   return (
     <>
-      <Navbar />
-      <div className="w-full bg-blue-950 h-screen p-36 ">
-        <div className="max-w-[1240px] mx-auto flex flex-col justify-center items-center ">
+    <Navbar/>
+      <div className="w-full bg-blue-950 lg:h-screen p-2 py-20 ">
+        <div className="max-w-[1240px] mx-auto flex flex-col justify-center items-center h-full">
           <h2
             data-aos="fade-up"
             className="py-4 tracking-widest text-gray-300 uppercase"
@@ -61,6 +62,7 @@ const SkillsPage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

@@ -5,6 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Navbar from "../_components/Navbar";
 import { motion } from "framer-motion";
+import Footer from "../_components/Footer";
 
 const ContactPage = () => {
   useEffect(() => {
@@ -128,19 +129,21 @@ const ContactPage = () => {
               Submit
             </button>
             {isSent && (
-            <>
-              <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                animate={{ opacity: 1, x: 0 }}
-              >
-                <p className="text-green-600 font-bold text-lg">Message sent !</p>
-              </motion.div>
-            </>
-          )}
+              <>
+                <motion.div
+                  initial={{ opacity: 0, x: -50 }}
+                  animate={{ opacity: 1, x: 0 }}
+                >
+                  <p className="text-green-600 font-bold text-lg">
+                    Message sent !
+                  </p>
+                </motion.div>
+              </>
+            )}
           </div>
-         
         </div>
       </form>
+      <Footer />
     </>
   );
 };
