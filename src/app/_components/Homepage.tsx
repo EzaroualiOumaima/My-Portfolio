@@ -57,12 +57,12 @@ const Homepage = () => {
                 <MdOutlineFileDownload className="w-7 h-7" />
               </button>
             </Link>
-            <Link href="https://www.linkedin.com/in/oumaima-ezarouali-382143232/">
+            <Link href="https://www.linkedin.com/in/oumaima-ezarouali-382143232/" target="_blank">
               <div className="rounded-full text-blue-500 shadow-lg shadow-blue-800 p-4 cursor-pointer hover:scale-110 ease-in duration-300 ">
                 <FaLinkedin className="h-6 w-6" />
               </div>
             </Link>
-            <Link href="https://github.com/EzaroualiOumaima">
+            <Link href="https://github.com/EzaroualiOumaima" target="_blank">
               <div className="rounded-full shadow-lg text-blue-500 shadow-blue-800 p-4 cursor-pointer hover:scale-110 ease-in duration-300 ">
                 <FaGithub className="h-6 w-6" />
               </div>

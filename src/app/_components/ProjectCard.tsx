@@ -64,35 +64,13 @@ const ProjectCard = ({
         </p>
 
         <div className="flex ">
-          <Link href={href}>
+          <Link href={href} target="_blank">
             <button className=" flex gap-3 items-center px-7 py-[0.5rem] z-20 bg-blue-500 rounded-full text-white relative font-semibold font-sans after:-z-20 after:absolute after:h-1 after:w-1 after:bg-blue-900 after:left-5 overflow-hidden after:bottom-0 after:translate-y-full after:rounded-md after:hover:scale-[300] after:hover:transition-all after:hover:duration-700 after:transition-all after:duration-700 transition-all duration-700 text-lg">
               View More
               <FaArrowRightLong />
             </button>
           </Link>
         </div>
-
-        {/* <a
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="px-5 py-[0.5rem] z-20 bg-blue-500 rounded-md text-white relative font-semibold font-sans after:-z-20 after:absolute after:h-1 after:w-1 after:bg-blue-900 after:left-5 overflow-hidden after:bottom-0 after:translate-y-full after:rounded-md after:hover:scale-[300] after:hover:transition-all after:hover:duration-700 after:transition-all after:duration-700 transition-all duration-700 text-lg"
-        >
-          View More
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            className="bi bi-arrow-right rtl:rotate-180 w-4 h-4 ms-1"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
-            />
-          </svg>
-        </a> */}
       </div>
     </motion.div>
   );
